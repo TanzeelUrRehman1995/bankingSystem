@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <section id="header" class="bg-blue-700">
+      <div class="container mx-auto text-white text-center flex items-center justify-between ">
+        <div>
+          <h1 class="text-5xl font-bold">UBL</h1>
+        </div>
+        <div>
+          <ul>
+            <li class="inline-block font-semibold">
+              <a href="login.html" onclick="clearData()">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </header>
+
+  <section>
+    <div class="container mx-auto">
+      <div class="w-full flex flex-col justify-center items-center">
+        <div class="w-full flex justify-between">
+          <!-- Available Balance Button -->
+          <button id="show_balance"
+            class="w-[15%] block bg-blue-700 text-white text-center font-semibold rounded-lg p-3 my-10">Show
+            Balance</button>
+          <!-- Deposite Button -->
+          <a id="deposite"
+            href="deposite.html"  class="w-[15%] block bg-blue-700 text-white text-center font-semibold rounded-lg p-3 my-10">Deposite
+          </a>
+          <!-- Transaction -->
+          <a id="transaction"
+            href="transaction.html" class="w-[15%] block bg-blue-700 text-white text-center font-semibold rounded-lg p-3 my-10">Transaction/Transfer
+          </a>
+          <!-- Transaction History Button -->
+          <a id="transaction_history"
+            href="transactionHistory.html" class="w-[15%] block bg-blue-700 text-white text-center font-semibold rounded-lg p-3 my-10">Transaction
+            History
+          </a>
+
+        </div>
+        <p id="balance" class="font-semibold bg-blue-700 text-white text-2xl p-2 rounded-lg">RS</p>
+      </div>
+
+
+    </div>
+
+  </section>
+  
+  <!-- <script src="dashboard.js" ></script> -->
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  
+     <!-- Header -->
+  <header>
+    <section id="header" class="bg-blue-700">
+      <div class="container mx-auto text-white text-center flex items-center justify-between ">
+        <div>
+          <h1 class="text-5xl font-bold"><a href="dashboard.html">UBL</a></h1>
+        </div>
+        <div>
+          <ul>
+            <li class="inline-block font-semibold">
+              <a href="login.html" onclick="clearData()">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </header>
+
+  <section id="deposite-sec">
+    <div class="container h-[100vh] flex ">
+        <div class="w-[27%] mx-auto my-auto flex flex-col  px-5 py-10 shadow-2xl rounded-lg space-y-4">
+            <!-- Deposite Form -->
+            <form id="deposite_form" class="flex flex-col justify-center items-center space-y-3 ">
+                <input class=" w-[302px] focus:outline-none border-2 border-blue-700 rounded-lg p-2 pl-5 appearance-none remove-arrow"
+                type="number" id="available_balance" name="available_balance" placeholder="Enter Amount to be deposite" required value="">
+
+                <button type="submit"
+                    class="w-[302px] bg-blue-700 text-white font-semibold rounded-lg p-3">Add</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+  
+  <script src="app.js"></script>
+</body>
+</html> 
